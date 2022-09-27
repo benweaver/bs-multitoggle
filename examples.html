@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multitoggle</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="multitoggle.css">
+    </head>
+    <body>
+        <div class="container">
+            <h3>Multitoggle</h3>
+            <p>Present radio buttons as a multi-way switch or slider, using styling similar to Bootstrap switches.</p>
+            <div class="multitoggle">
+                <div class="multitoggle-switch">
+                    <input type="radio" name="example-1a" value="false" id="example-1a-1" checked="checked" class="multitoggle-off"/>
+                    <label class="toggle" for="example-1a-1"></label>
+                    <input type="radio" name="example-1a" value="middle-1" id="example-1a-2"/>
+                    <label class="toggle" for="example-1a-2"></label>
+                    <input type="radio" name="example-1a" value="middle-2" id="example-1a-3"/>
+                    <label class="toggle" for="example-1a-3"></label>
+                    <input type="radio" name="example-1a" value="true" id="example-1a-4" class="multitoggle-on"/>
+                    <label class="toggle" for="example-1a-4"></label>
+                </div>
+                <label class="multitoggle-label">False, using <code>.multitoggle-off</code></label>
+                <label class="multitoggle-label">Maybe</label>
+                <label class="multitoggle-label">Mayyyybe</label>
+                <label class="multitoggle-label">True, using <code>.multitoggle-on</code></label>
+            </div>
+            <div class="multitoggle">
+                <div class="multitoggle-switch">
+                    <input type="radio" name="example-1b" value="false" id="example-1b-1" class="multitoggle-off"/>
+                    <label class="toggle" for="example-1b-1"></label>
+                    <input type="radio" name="example-1b" value="middle-1" id="example-1b-2" checked="checked"/>
+                    <label class="toggle" for="example-1b-2"></label>
+                    <input type="radio" name="example-1b" value="middle-2" id="example-1b-3"/>
+                    <label class="toggle" for="example-1b-3"></label>
+                    <input type="radio" name="example-1b" value="true" id="example-1b-4" class="multitoggle-on"/>
+                    <label class="toggle" for="example-1b-4"></label>
+                </div>
+                <label class="multitoggle-label">False, using <code>.multitoggle-off</code></label>
+                <label class="multitoggle-label">Maybe</label>
+                <label class="multitoggle-label">Mayyyybe</label>
+                <label class="multitoggle-label">True, using <code>.multitoggle-on</code></label>
+            </div>
+            <div class="multitoggle">
+                <div class="multitoggle-switch">
+                    <input type="radio" name="example-1c" value="false" id="example-1c-1" class="multitoggle-off"/>
+                    <label class="toggle" for="example-1c-1"></label>
+                    <input type="radio" name="example-1c" value="middle-1" id="example-1c-2"/>
+                    <label class="toggle" for="example-1c-2"></label>
+                    <input type="radio" name="example-1c" value="middle-2" id="example-1c-3"/>
+                    <label class="toggle" for="example-1c-3"></label>
+                    <input type="radio" name="example-1c" value="true" id="example-1c-4" checked="checked" class="multitoggle-on"/>
+                    <label class="toggle" for="example-1c-4"></label>
+                </div>
+                <label class="multitoggle-label">False, using <code>.multitoggle-off</code></label>
+                <label class="multitoggle-label">Maybe</label>
+                <label class="multitoggle-label">Mayyyybe</label>
+                <label class="multitoggle-label">True, using <code>.multitoggle-on</code></label>
+            </div>
+            <pre style="border: thin solid black; margin: 20px; font-size:x-small">
+&lt;div class="multitoggle">
+    &lt;div class="multitoggle-switch">
+        &lt;input type="radio" name="example-1" value="false" id="example-1-1" class="multitoggle-off"/>
+        &lt;label class="toggle" for="example-1-1">&lt;/label>
+        &lt;input type="radio" name="example-1" value="middle-1" id="example-1-2"/>
+        &lt;label class="toggle" for="example-1-2">&lt;/label>
+        &lt;input type="radio" name="example-1" value="middle-2" id="example-1-3"/>
+        &lt;label class="toggle" for="example-1-3">&lt;/label>
+        &lt;input type="radio" name="example-1" value="true" id="example-1-4" checked="checked" class="multitoggle-on"/>
+        &lt;label class="toggle" for="example-1-4">&lt;/label>
+    &lt;/div>
+    &lt;label class="multitoggle-label">False&lt;/label>
+    &lt;label class="multitoggle-label">Maybe&lt;/label>
+    &lt;label class="multitoggle-label">Mayyyybe&lt;/label>
+    &lt;label class="multitoggle-label">True&lt;/label>
+&lt;/div></pre>
+            <p></p>
+            <h4>Disabled toggles</h4>
+            <div class="multitoggle">
+                <div class="multitoggle-switch">
+                    <input type="radio" name="example-2a" value="false" id="example-2a-1" checked="checked" class="multitoggle-off" disabled="disabled"/>
+                    <label class="toggle" for="example-2a-1"></label>
+                    <input type="radio" name="example-2a" value="middle" id="example-2a-2" disabled="disabled"/>
+                    <label class="toggle" for="example-2a-2"></label>
+                    <input type="radio" name="example-2a" value="end" id="example-2a-3" class="multitoggle-on" disabled="disabled"/>
+                    <label class="toggle" for="example-2a-3"></label>
+                </div>
+                <label class="multitoggle-label">False</label>
+                <label class="multitoggle-label">Maybe</label>
+                <label class="multitoggle-label">True</label>
+            </div>
+            <div class="multitoggle">
+                <div class="multitoggle-switch">
+                    <input type="radio" name="example-2b" value="false" id="example-2b-1" class="multitoggle-off" disabled="disabled"/>
+                    <label class="toggle" for="example-2-1"></label>
+                    <input type="radio" name="example-2b" value="middle" id="example-2b-2"  disabled="disabled" checked="checked"/>
+                    <label class="toggle" for="example-2-2"></label>
+                    <input type="radio" name="example-2b" value="end" id="example-2b-3" class="multitoggle-on" disabled="disabled"/>
+                    <label class="toggle" for="example-2b-3"></label>
+                </div>
+                <label class="multitoggle-label">False</label>
+                <label class="multitoggle-label">Maybe</label>
+                <label class="multitoggle-label">True</label>
+            </div>
+            <div class="multitoggle">
+                <div class="multitoggle-switch">
+                    <input type="radio" name="example-2c" value="false" id="example-2c-1" class="multitoggle-off" disabled="disabled"/>
+                    <label class="toggle" for="example-2c-1"></label>
+                    <input type="radio" name="example-2c" value="end" id="example-2c-2" disabled="disabled"/>
+                    <label class="toggle" for="example-2c-2"></label>
+                    <input type="radio" name="example-2c" value="end" id="example-2c-3" checked="checked" class="multitoggle-on" disabled="disabled"/>
+                    <label class="toggle" for="example-2c-3"></label>
+                </div>
+                <label class="multitoggle-label">False</label>
+                <label class="multitoggle-label">Maybe</label>
+                <label class="multitoggle-label">True</label>
+            </div>
+            <p></p>
+            <h3>Sliders</h3>
+            <p>Use <code>.multitoggle-slider</code> to add the slider line, and <code>.multitoggle-slider-bare</code> to remove the border</p>
+            <div class="multitoggle">
+                <div class="multitoggle-switch multitoggle-slider">
+                    <input type="radio" name="example-3a" value="1" id="example-3a-1" class="multitoggle-off" checked="checked"/>
+                    <label class="toggle" for="example-3a-1"></label>
+                    <input type="radio" name="example-3a" value="2" id="example-3a-2"/>
+                    <label class="toggle" for="example-3a-2"></label>
+                    <input type="radio" name="example-3a" value="3" id="example-3a-3"/>
+                    <label class="toggle" for="example-3a-3"></label>
+                    <input type="radio" name="example-3a" value="4" id="example-3a-4"/>
+                    <label class="toggle" for="example-3a-4"></label>
+                    <input type="radio" name="example-3a" value="5" id="example-3a-5" class="multitoggle-on"/>
+                    <label class="toggle" for="example-3a-5"></label>
+                </div>
+                <label class="multitoggle-label">1</label>
+                <label class="multitoggle-label">2</label>
+                <label class="multitoggle-label">3</label>
+                <label class="multitoggle-label">4</label>
+                <label class="multitoggle-label">5</label>
+            </div>
+            <div class="multitoggle">
+                <div class="multitoggle-switch multitoggle-slider multitoggle-slider-bare">
+                    <input type="radio" name="example-3b" value="1" id="example-3b-1"/>
+                    <label class="toggle" for="example-3b-1"></label>
+                    <input type="radio" name="example-3b" value="2" id="example-3b-2"/>
+                    <label class="toggle" for="example-3b-2"></label>
+                    <input type="radio" name="example-3b" value="3" id="example-3b-3" checked="checked"/>
+                    <label class="toggle" for="example-3b-3"></label>
+                    <input type="radio" name="example-3b" value="4" id="example-3b-4"/>
+                    <label class="toggle" for="example-3b-4"></label>
+                    <input type="radio" name="example-3b" value="5" id="example-3b-5"/>
+                    <label class="toggle" for="example-3b-5"></label>
+                </div>
+                <label class="multitoggle-label">1</label>
+                <label class="multitoggle-label">2</label>
+                <label class="multitoggle-label">3</label>
+                <label class="multitoggle-label">4</label>
+                <label class="multitoggle-label">5</label>
+            </div>
+            <p></p>
+            <h4>Disabled sliders</h4>
+            <div class="multitoggle">
+                <div class="multitoggle-switch multitoggle-slider">
+                    <input type="radio" name="example-4a" value="1" id="example-4a-1" disabled="disabled" checked="checked" class="multitoggle-off"/>
+                    <label class="toggle" for="example-4a-1"></label>
+                    <input type="radio" name="example-4a" value="2" id="example-4a-2" disabled="disabled"/>
+                    <label class="toggle" for="example-4a-2"></label>
+                    <input type="radio" name="example-4a" value="3" id="example-4a-3" disabled="disabled"/>
+                    <label class="toggle" for="example-4a-3"></label>
+                    <input type="radio" name="example-4a" value="4" id="example-4a-4" disabled="disabled"/>
+                    <label class="toggle" for="example-4a-4"></label>
+                    <input type="radio" name="example-4a" value="5" id="example-4a-5" disabled="disabled"/>
+                    <label class="toggle" for="example-4a-5"></label>
+                </div>
+                <label class="multitoggle-label">1</label>
+                <label class="multitoggle-label">2</label>
+                <label class="multitoggle-label">3</label>
+                <label class="multitoggle-label">4</label>
+                <label class="multitoggle-label">5</label>
+            </div>
+            <div class="multitoggle">
+                <div class="multitoggle-switch multitoggle-slider">
+                    <input type="radio" name="example-4b" value="1" id="example-4b-1" disabled="disabled"/>
+                    <label class="toggle" for="example-4b-1"></label>
+                    <input type="radio" name="example-4b" value="2" id="example-4b-2" disabled="disabled"/>
+                    <label class="toggle" for="example-4b-2"></label>
+                    <input type="radio" name="example-4b" value="3" id="example-4b-3" disabled="disabled" checked="checked"/>
+                    <label class="toggle" for="example-4b-3"></label>
+                    <input type="radio" name="example-4b" value="4" id="example-4b-4" disabled="disabled"/>
+                    <label class="toggle" for="example-4b-4"></label>
+                    <input type="radio" name="example-4b" value="5" id="example-4b-5" disabled="disabled"/>
+                    <label class="toggle" for="example-4b-5"></label>
+                </div>
+                <label class="multitoggle-label">1</label>
+                <label class="multitoggle-label">2</label>
+                <label class="multitoggle-label">3</label>
+                <label class="multitoggle-label">4</label>
+                <label class="multitoggle-label">5</label>
+            </div>
+            <div class="multitoggle">
+                <div class="multitoggle-switch multitoggle-slider multitoggle-slider-bare">
+                    <input type="radio" name="example-4c" value="1" id="example-4c-1" disabled="disabled"/>
+                    <label class="toggle" for="example-4c-1"></label>
+                    <input type="radio" name="example-4c" value="2" id="example-4c-2" disabled="disabled"/>
+                    <label class="toggle" for="example-4c-2"></label>
+                    <input type="radio" name="example-4c" value="3" id="example-4c-3" disabled="disabled"/>
+                    <label class="toggle" for="example-4c-3"></label>
+                    <input type="radio" name="example-4c" value="4" id="example-4c-4" disabled="disabled"/>
+                    <label class="toggle" for="example-4c-4"></label>
+                    <input type="radio" name="example-4c" value="5" id="example-4c-5" disabled="disabled" checked="checked" class="multitoggle-on"/>
+                    <label class="toggle" for="example-4c-5"></label>
+                </div>
+                <label class="multitoggle-label">1</label>
+                <label class="multitoggle-label">2</label>
+                <label class="multitoggle-label">3</label>
+                <label class="multitoggle-label">4</label>
+                <label class="multitoggle-label">5</label>
+            </div>
+            <pre style="border: thin solid black; margin: 20px; font-size:x-small">
+&lt;div class="multitoggle">
+    &lt;div class="multitoggle-switch multitoggle-slider multitoggle-slider-bare">
+        &lt;input type="radio" name="example-4" value="1" id="example-4-1" disabled="disabled"/>
+        &lt;label class="toggle" for="example-4-1">&lt;/label>
+        &lt;input type="radio" name="example-4" value="2" id="example-4-2" disabled="disabled"/>
+        &lt;label class="toggle" for="example-4-2">&lt;/label>
+        &lt;input type="radio" name="example-4" value="3" id="example-4-3" disabled="disabled"/>
+        &lt;label class="toggle" for="example-4-3">&lt;/label>
+        &lt;input type="radio" name="example-4" value="4" id="example-4-4" disabled="disabled"/>
+        &lt;label class="toggle" for="example-4-4">&lt;/label>
+        &lt;input type="radio" name="example-4" value="5" id="example-4-5" disabled="disabled" checked="checked" class="multitoggle-on"/>
+        &lt;label class="toggle" for="example-4-5">&lt;/label>
+    &lt;/div>
+    &lt;label class="multitoggle-label">1&lt;/label>
+    &lt;label class="multitoggle-label">2&lt;/label>
+    &lt;label class="multitoggle-label">3&lt;/label>
+    &lt;label class="multitoggle-label">4&lt;/label>
+    &lt;label class="multitoggle-label">5&lt;/label>
+&lt;/div></pre>
+        </div>
+    </body>
+</html>
