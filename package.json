@@ -1,0 +1,25 @@
+{
+  "name": "bs-multitoggle",
+  "version": "0.1.0",
+  "description": "Bootstrap-style multiway toggle",
+  "homepage": "https://github.com/benweaver/bs-multitoggle",
+  "bugs": {
+    "url": "https://github.com/benweaver/bs-multitoggle/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benweaver/bs-multitoggle.git"
+  },
+  "scripts": {
+    "build": "csso multitoggle.css --output dist/multitoggle.min.css"
+  },
+  "files": ["multitoggle.css"],
+  "license": "MIT",
+  "author": "Ben Weaver",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "csso-cli": "^4.0.2"
+  }
+}
